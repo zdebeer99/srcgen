@@ -9,6 +9,8 @@ that conforms to the standard and the template will work.
 the standard specify minimum functionality and can be extended by adding custom properties to
 a data object. The custom properties should be well documented on the template ReadMe.md file.
 
+
+
 ## Syntax
 
 * fields marked with [] square brackets are optional.
@@ -25,6 +27,8 @@ the following structure types is supported.
 
 * interface
 * model
+
+each structure represent a collection of items, a model Structure contains a collection of models and a interface contains a collection of functions.
 
 ## Application - Structure
 
@@ -102,3 +106,9 @@ interface data contains interface call information.
 * name : string
 * arguments : [FieldType]
 * returnType : string representing a std type.
+
+#Tegnology
+
+* https://github.com/spf13/viper  
+  config engine
+  

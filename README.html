@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8" />
+      <title>README</title>
+      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(197, 200, 198); overflow: auto; background-color: rgb(29, 31, 33); }
+.markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
+.markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
+.markdown-preview:not([data-use-github-style]) h2 { font-size: 1.8em; font-weight: 400; }
+.markdown-preview:not([data-use-github-style]) h3 { font-size: 1.5em; font-weight: 500; }
+.markdown-preview:not([data-use-github-style]) h4 { font-size: 1.2em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h5 { font-size: 1.1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) h6 { font-size: 1em; font-weight: 600; }
+.markdown-preview:not([data-use-github-style]) strong { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) del { color: rgb(155, 160, 157); }
+.markdown-preview:not([data-use-github-style]) a, .markdown-preview:not([data-use-github-style]) a code { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) img { max-width: 100%; }
+.markdown-preview:not([data-use-github-style]) > p { margin-top: 0px; margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) > ul, .markdown-preview:not([data-use-github-style]) > ol { margin-bottom: 1.5em; }
+.markdown-preview:not([data-use-github-style]) blockquote { margin: 1.5em 0px; font-size: inherit; color: rgb(155, 160, 157); border-color: rgb(67, 72, 76); border-width: 4px; }
+.markdown-preview:not([data-use-github-style]) hr { margin: 3em 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(67, 72, 76); background: none; }
+.markdown-preview:not([data-use-github-style]) table { margin: 1.5em 0px; }
+.markdown-preview:not([data-use-github-style]) th { color: rgb(255, 255, 255); }
+.markdown-preview:not([data-use-github-style]) th, .markdown-preview:not([data-use-github-style]) td { padding: 0.66em 1em; border: 1px solid rgb(67, 72, 76); }
+.markdown-preview:not([data-use-github-style]) code { color: rgb(255, 255, 255); background-color: rgb(48, 51, 55); }
+.markdown-preview:not([data-use-github-style]) pre.editor-colors { margin: 1.5em 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(39, 41, 44); }
+.markdown-preview:not([data-use-github-style]) kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(67, 72, 76) rgb(67, 72, 76) rgb(53, 57, 60); background-color: rgb(48, 51, 55); }
+.markdown-preview[data-use-github-style] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; line-height: 1.6; word-wrap: break-word; padding: 30px; font-size: 16px; color: rgb(51, 51, 51); overflow: scroll; background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] > :first-child { margin-top: 0px !important; }
+.markdown-preview[data-use-github-style] > :last-child { margin-bottom: 0px !important; }
+.markdown-preview[data-use-github-style] a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-preview[data-use-github-style] .absent { color: rgb(204, 0, 0); }
+.markdown-preview[data-use-github-style] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
+.markdown-preview[data-use-github-style] .anchor:focus { outline: none; }
+.markdown-preview[data-use-github-style] h1, .markdown-preview[data-use-github-style] h2, .markdown-preview[data-use-github-style] h3, .markdown-preview[data-use-github-style] h4, .markdown-preview[data-use-github-style] h5, .markdown-preview[data-use-github-style] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
+.markdown-preview[data-use-github-style] h1 .octicon-link, .markdown-preview[data-use-github-style] h2 .octicon-link, .markdown-preview[data-use-github-style] h3 .octicon-link, .markdown-preview[data-use-github-style] h4 .octicon-link, .markdown-preview[data-use-github-style] h5 .octicon-link, .markdown-preview[data-use-github-style] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
+.markdown-preview[data-use-github-style] h1:hover .anchor, .markdown-preview[data-use-github-style] h2:hover .anchor, .markdown-preview[data-use-github-style] h3:hover .anchor, .markdown-preview[data-use-github-style] h4:hover .anchor, .markdown-preview[data-use-github-style] h5:hover .anchor, .markdown-preview[data-use-github-style] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
+.markdown-preview[data-use-github-style] h1:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h2:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h3:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h4:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h5:hover .anchor .octicon-link, .markdown-preview[data-use-github-style] h6:hover .anchor .octicon-link { display: inline-block; }
+.markdown-preview[data-use-github-style] h1 tt, .markdown-preview[data-use-github-style] h2 tt, .markdown-preview[data-use-github-style] h3 tt, .markdown-preview[data-use-github-style] h4 tt, .markdown-preview[data-use-github-style] h5 tt, .markdown-preview[data-use-github-style] h6 tt, .markdown-preview[data-use-github-style] h1 code, .markdown-preview[data-use-github-style] h2 code, .markdown-preview[data-use-github-style] h3 code, .markdown-preview[data-use-github-style] h4 code, .markdown-preview[data-use-github-style] h5 code, .markdown-preview[data-use-github-style] h6 code { font-size: inherit; }
+.markdown-preview[data-use-github-style] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h1 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
+.markdown-preview[data-use-github-style] h2 .anchor { line-height: 1; }
+.markdown-preview[data-use-github-style] h3 { font-size: 1.5em; line-height: 1.43; }
+.markdown-preview[data-use-github-style] h3 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h4 { font-size: 1.25em; }
+.markdown-preview[data-use-github-style] h4 .anchor { line-height: 1.2; }
+.markdown-preview[data-use-github-style] h5 { font-size: 1em; }
+.markdown-preview[data-use-github-style] h5 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] h6 { font-size: 1em; color: rgb(119, 119, 119); }
+.markdown-preview[data-use-github-style] h6 .anchor { line-height: 1.1; }
+.markdown-preview[data-use-github-style] p, .markdown-preview[data-use-github-style] blockquote, .markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol, .markdown-preview[data-use-github-style] dl, .markdown-preview[data-use-github-style] table, .markdown-preview[data-use-github-style] pre { margin-top: 0px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
+.markdown-preview[data-use-github-style] ul, .markdown-preview[data-use-github-style] ol { padding-left: 2em; }
+.markdown-preview[data-use-github-style] ul.no-list, .markdown-preview[data-use-github-style] ol.no-list { padding: 0px; list-style-type: none; }
+.markdown-preview[data-use-github-style] ul ul, .markdown-preview[data-use-github-style] ul ol, .markdown-preview[data-use-github-style] ol ol, .markdown-preview[data-use-github-style] ol ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] li > p { margin-top: 16px; }
+.markdown-preview[data-use-github-style] dl { padding: 0px; }
+.markdown-preview[data-use-github-style] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
+.markdown-preview[data-use-github-style] dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] blockquote > :first-child { margin-top: 0px; }
+.markdown-preview[data-use-github-style] blockquote > :last-child { margin-bottom: 0px; }
+.markdown-preview[data-use-github-style] table { display: block; width: 100%; overflow: auto; word-break: normal; }
+.markdown-preview[data-use-github-style] table th { font-weight: bold; }
+.markdown-preview[data-use-github-style] table th, .markdown-preview[data-use-github-style] table td { padding: 6px 13px; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] table tr { border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); background-color: rgb(255, 255, 255); }
+.markdown-preview[data-use-github-style] table tr:nth-child(2n) { background-color: rgb(248, 248, 248); }
+.markdown-preview[data-use-github-style] img { max-width: 100%; box-sizing: border-box; }
+.markdown-preview[data-use-github-style] .emoji { max-width: none; }
+.markdown-preview[data-use-github-style] span.frame { display: block; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
+.markdown-preview[data-use-github-style] span.frame span img { display: block; float: left; }
+.markdown-preview[data-use-github-style] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
+.markdown-preview[data-use-github-style] span.align-center { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-center span img { margin: 0px auto; text-align: center; }
+.markdown-preview[data-use-github-style] span.align-right { display: block; overflow: hidden; clear: both; }
+.markdown-preview[data-use-github-style] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] span.align-right span img { margin: 0px; text-align: right; }
+.markdown-preview[data-use-github-style] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
+.markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
+.markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; border-radius: 3px; background-color: rgba(0, 0, 0, 0.0392157); }
+.markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: ' '; }
+.markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
+.markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
+.markdown-preview[data-use-github-style] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
+.markdown-preview[data-use-github-style] .highlight { margin-bottom: 16px; }
+.markdown-preview[data-use-github-style] .highlight pre, .markdown-preview[data-use-github-style] pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
+.markdown-preview[data-use-github-style] .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-preview[data-use-github-style] pre { word-wrap: normal; }
+.markdown-preview[data-use-github-style] pre code, .markdown-preview[data-use-github-style] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
+.markdown-preview[data-use-github-style] pre code::before, .markdown-preview[data-use-github-style] pre tt::before, .markdown-preview[data-use-github-style] pre code::after, .markdown-preview[data-use-github-style] pre tt::after { content: normal; }
+.markdown-preview[data-use-github-style] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
+.markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
+.markdown-preview[data-use-github-style] code { color: inherit; }
+.markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors::shadow .horizontal-scrollbar { visibility: hidden; }
+.scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover::shadow .horizontal-scrollbar { visibility: visible; }
+.markdown-preview code { text-shadow: none; }
+.gutter .line-number {
+  background-size: 0px;
+  transition: background-size 0.5s;
+}
+.gutter .line-number.quickfix {
+  background-image: url(atom://atom-typescript/images/light-bulb.png);
+  background-size: 16.66666667px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.pre.editor-colors .gutter .go-plus-error {
+  color: #cc0000;
+}
+.pre.editor-colors .gutter .git-line-added.go-plus-error {
+  color: #cc0000;
+}
+.pre.editor-colors .gutter .git-line-modified.go-plus-error {
+  color: #cc0000;
+}
+.pre.editor-colors .gutter .git-line-removed.go-plus-error {
+  color: #cc0000;
+}
+.goplus-error {
+  background-color: #ff4d4d;
+  color: #800000;
+}
+.goplus-warning {
+  background-color: #ffc979;
+  color: #e07200;
+}
+.highlight.uncovered .region {
+  background-color: #cc0000;
+  opacity: 0.2;
+}
+.highlight.covered .region {
+  background-color: #17ca65;
+  opacity: 0.2;
+}
+.highlight.definition .region {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.bracket-matcher .region {
+  border-bottom: 1px dotted lime;
+  position: absolute;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+
+pre.editor-colors,
+.host {
+  background-color: #1d1f21;
+  color: #c5c8c6;
+}
+pre.editor-colors .invisible-character,
+.host .invisible-character {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .indent-guide,
+.host .indent-guide {
+  color: rgba(197, 200, 198, 0.2);
+}
+pre.editor-colors .wrap-guide,
+.host .wrap-guide {
+  background-color: rgba(197, 200, 198, 0.1);
+}
+pre.editor-colors .gutter,
+.host .gutter {
+  background-color: #292c2f;
+}
+pre.editor-colors .gutter .cursor-line,
+.host .gutter .cursor-line {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .line-number.cursor-line-no-selection,
+.host .line-number.cursor-line-no-selection {
+  background-color: rgba(255, 255, 255, 0.14);
+}
+pre.editor-colors .gutter .line-number.folded,
+.host .gutter .line-number.folded,
+pre.editor-colors .gutter .line-number:after,
+.host .gutter .line-number:after,
+pre.editor-colors .fold-marker:after,
+.host .fold-marker:after {
+  color: #fba0e3;
+}
+pre.editor-colors .invisible,
+.host .invisible {
+  color: #c5c8c6;
+}
+pre.editor-colors .cursor,
+.host .cursor {
+  border-color: #ffffff;
+}
+pre.editor-colors .selection .region,
+.host .selection .region {
+  background-color: #444444;
+}
+pre.editor-colors .source.gfm,
+.host .source.gfm {
+  color: #999;
+}
+pre.editor-colors .gfm .markup.heading,
+.host .gfm .markup.heading {
+  color: #eee;
+}
+pre.editor-colors .gfm .link,
+.host .gfm .link {
+  color: #555;
+}
+pre.editor-colors .gfm .variable.list,
+.host .gfm .variable.list,
+pre.editor-colors .gfm .support.quote,
+.host .gfm .support.quote {
+  color: #555;
+}
+pre.editor-colors .gfm .link .entity,
+.host .gfm .link .entity {
+  color: #ddd;
+}
+pre.editor-colors .gfm .raw,
+.host .gfm .raw {
+  color: #aaa;
+}
+pre.editor-colors .markdown .paragraph,
+.host .markdown .paragraph {
+  color: #999;
+}
+pre.editor-colors .markdown .heading,
+.host .markdown .heading {
+  color: #eee;
+}
+pre.editor-colors .markdown .raw,
+.host .markdown .raw {
+  color: #aaa;
+}
+pre.editor-colors .markdown .link,
+.host .markdown .link {
+  color: #555;
+}
+pre.editor-colors .markdown .link .string,
+.host .markdown .link .string {
+  color: #555;
+}
+pre.editor-colors .markdown .link .string.title,
+.host .markdown .link .string.title {
+  color: #ddd;
+}
+.bracket-matcher .region {
+  border-bottom: 1px solid #f8de7e;
+  margin-top: -1px;
+  opacity: .7;
+}
+.comment {
+  color: #7C7C7C;
+}
+.entity {
+  color: #FFD2A7;
+}
+.entity.name.type {
+  text-decoration: underline;
+  color: #FFFFB6;
+}
+.entity.other.inherited-class {
+  color: #9B5C2E;
+}
+.keyword {
+  color: #96CBFE;
+}
+.keyword.control {
+  color: #96CBFE;
+}
+.keyword.operator {
+  color: #EDEDED;
+}
+.storage {
+  color: #CFCB90;
+}
+.storage.modifier {
+  color: #96CBFE;
+}
+.constant {
+  color: #99CC99;
+}
+.constant.numeric {
+  color: #FF73FD;
+}
+.variable {
+  color: #C6C5FE;
+}
+.invalid.deprecated {
+  text-decoration: underline;
+  color: #FD5FF1;
+}
+.invalid.illegal {
+  color: #FD5FF1;
+  background-color: rgba(86, 45, 86, 0.75);
+}
+.string .source,
+.string .meta.embedded.line {
+  color: #EDEDED;
+}
+.string .punctuation.section.embedded {
+  color: #00A0A0;
+}
+.string .punctuation.section.embedded .source {
+  color: #00A0A0;
+}
+.string {
+  color: #A8FF60;
+}
+.string .constant {
+  color: #00A0A0;
+}
+.string.regexp {
+  color: #E9C062;
+}
+.string.regexp .constant.character.escape,
+.string.regexp .source.ruby.embedded,
+.string.regexp .string.regexp.arbitrary-repetition {
+  color: #FF8000;
+}
+.string.regexp.group {
+  color: #C6A24F;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.string.regexp.character-class {
+  color: #B18A3D;
+}
+.string .variable {
+  color: #8A9A95;
+}
+.support {
+  color: #FFFFB6;
+}
+.support.function {
+  color: #DAD085;
+}
+.support.constant {
+  color: #FFD2A7;
+}
+.support.type.property-name.css {
+  color: #EDEDED;
+}
+.source .entity.name.tag,
+.source .punctuation.tag {
+  color: #96CBFE;
+}
+.source .entity.other.attribute-name {
+  color: #C6C5FE;
+}
+.entity.other.attribute-name {
+  color: #C6C5FE;
+}
+.entity.name.tag.namespace,
+.entity.other.attribute-name.namespace {
+  color: #E18964;
+}
+.meta.preprocessor.c {
+  color: #8996A8;
+}
+.meta.preprocessor.c .keyword {
+  color: #AFC4DB;
+}
+.meta.cast {
+  color: #676767;
+}
+.meta.sgml.html .meta.doctype,
+.meta.sgml.html .meta.doctype .entity,
+.meta.sgml.html .meta.doctype .string,
+.meta.xml-processing,
+.meta.xml-processing .entity,
+.meta.xml-processing .string {
+  color: #494949;
+}
+.meta.tag .entity,
+.meta.tag > .punctuation,
+.meta.tag.inline .entity {
+  color: #C6C5FE;
+}
+.meta.tag .name,
+.meta.tag.inline .name,
+.meta.tag > .punctuation {
+  color: #96CBFE;
+}
+.meta.selector.css .entity.name.tag {
+  text-decoration: underline;
+  color: #96CBFE;
+}
+.meta.selector.css .entity.other.attribute-name.tag.pseudo-class {
+  color: #8F9D6A;
+}
+.meta.selector.css .entity.other.attribute-name.id {
+  color: #8B98AB;
+}
+.meta.selector.css .entity.other.attribute-name.class {
+  color: #62B1FE;
+}
+.meta.property-group .support.constant.property-value.css,
+.meta.property-value .support.constant.property-value.css {
+  color: #F9EE98;
+}
+.meta.preprocessor.at-rule .keyword.control.at-rule {
+  color: #8693A5;
+}
+.meta.property-value .support.constant.named-color.css,
+.meta.property-value .constant {
+  color: #87C38A;
+}
+.meta.constructor.argument.css {
+  color: #8F9D6A;
+}
+.meta.diff,
+.meta.diff.header {
+  color: #F8F8F8;
+  background-color: #0E2231;
+}
+.meta.separator {
+  color: #60A633;
+  background-color: #242424;
+}
+.meta.line.entry.logfile,
+.meta.line.exit.logfile {
+  background-color: rgba(238, 238, 238, 0.16);
+}
+.meta.line.error.logfile {
+  background-color: #751012;
+}
+</style>
+  </head>
+  <body class='markdown-preview'><h1 id="srcgen">srcgen</h1>
+<p>generate source code from data</p>
+<h2 id="template">Template</h2>
+<p>Uses standard go templates with the default delimiters set to &lt;% %&gt;, this can be changed on a per template basis.</p>
+<h2 id="creating-a-template">Creating a Template</h2>
+<p>Templates is stored in the template folder, where a folder specify the template name.</p>
+<p>Example:
+We have a template named &#39;readme&#39; the folder structure should look like this.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>./TemplatePath/readme/readme.md</span></span></span></div></pre><p>By default srcgen will traverse all files in the folder and execute them as templates, how ever more complex behavior can be defined using a template settings file.</p>
+<h2 id="template-settings">Template Settings</h2>
+<h2 id="template-functions">Template Functions</h2>
+<p>srcgen uses the Go html/template library for its template engine.
+It is an extremely lightweight engine that provides a very small amount of
+logic.</p>
+<p>Go templates are lightweight but extensible. The following
+functions was added to the basic template logic.</p>
+<p>(Go itself supplies built-in functions, including comparison operators
+and other basic tools; these are listed in the
+<a href="http://golang.org/pkg/text/template/#hdr-Functions">Go template documentation</a>.)</p>
+<h2 id="general-template-functions">General Template Functions</h2>
+<h3 id="delimit">delimit</h3>
+<p>Loops through any array, slice or map and returns a string of all the values separated by the delimiter. There is an optional third parameter that lets you choose a different delimiter to go between the last two values.
+Maps will be sorted by the keys, and only a slice of the values will be returned, keeping a consistent output order.</p>
+<p>Works on <a href="/templates/list/">lists</a>, <a href="/taxonomies/displaying/">taxonomies</a>, <a href="/templates/terms/">terms</a>, <a href="/templates/list/">groups</a></p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Front&nbsp;matter</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>tags:&nbsp;[&nbsp;&quot;tag1&quot;,&nbsp;&quot;tag2&quot;,&nbsp;&quot;tag3&quot;&nbsp;]</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Used&nbsp;anywhere&nbsp;in&nbsp;a&nbsp;template</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Tags:&nbsp;{{&nbsp;delimit&nbsp;.Params.tags&nbsp;&quot;,&nbsp;&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Outputs&nbsp;Tags:&nbsp;tag1,&nbsp;tag2,&nbsp;tag3</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Example&nbsp;with&nbsp;the&nbsp;optional&nbsp;&quot;last&quot;&nbsp;parameter</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Tags:&nbsp;{{&nbsp;delimit&nbsp;.Params.tags&nbsp;&quot;,&nbsp;&quot;&nbsp;&quot;&nbsp;and&nbsp;&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Outputs&nbsp;Tags:&nbsp;tag1,&nbsp;tag2&nbsp;and&nbsp;tag3</span></span></span></div></pre><h3 id="dict">dict</h3>
+<p>Creates a dictionary (map[string, interface{}), expects parameters added in value:object fasion.
+Invalid combinations like keys that are not strings or uneven number of parameters, will result in an exception thrown
+Useful for passing maps to partials when adding to a template.</p>
+<p>e.g. Pass into &quot;foo.html&quot; a map with the keys &quot;important, content&quot;</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{$important&nbsp;:=&nbsp;.Site.Params.SomethingImportant&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{range&nbsp;.Site.Params.Bar}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{partial&nbsp;&quot;foo&quot;&nbsp;(dict&nbsp;&quot;content&quot;&nbsp;.&nbsp;&quot;important&quot;&nbsp;$important)}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{end}}</span></span></span></div></pre><p>&quot;foo.html&quot;</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Important&nbsp;{{.important}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{.content}}</span></span></span></div></pre><p>or Create a map on the fly to pass into</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{partial&nbsp;&quot;foo&quot;&nbsp;(dict&nbsp;&quot;important&quot;&nbsp;&quot;Smiles&quot;&nbsp;&quot;content&quot;&nbsp;&quot;You&nbsp;should&nbsp;do&nbsp;more&quot;)}}</span></span></span></div></pre><h3 id="echoparam">echoParam</h3>
+<p>Prints a parameter if it is set.</p>
+<p>e.g. <code>{{ echoParam .Params &quot;project_url&quot; }}</code></p>
+<h3 id="eq">eq</h3>
+<p>Returns true if the parameters are equal.</p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;if&nbsp;eq&nbsp;.Section&nbsp;&quot;blog&quot;&nbsp;}}current{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h3 id="first">first</h3>
+<p>Slices an array to only the first <em>N</em> elements.</p>
+<p>Works on <a href="/templates/list/">lists</a>, <a href="/taxonomies/displaying/">taxonomies</a>, <a href="/templates/terms/">terms</a>, <a href="/templates/list/">groups</a></p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;first&nbsp;10&nbsp;.Data.Pages&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Render&nbsp;&quot;summary&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h3 id="last">last</h3>
+<p>Slices an array to only the last <em>N</em> elements.</p>
+<p>Works on <a href="/templates/list/">lists</a>, <a href="/taxonomies/displaying/">taxonomies</a>, <a href="/templates/terms/">terms</a>, <a href="/templates/list/">groups</a></p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;last&nbsp;10&nbsp;.Data.Pages&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Render&nbsp;&quot;summary&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h3 id="after">after</h3>
+<p>Slices an array to only the items after the <em>N</em>th item. Use this in combination
+with <code>first</code> to use both halves of an array split at item <em>N</em>.</p>
+<p>Works on <a href="/templates/list/">lists</a>, <a href="/taxonomies/displaying/">taxonomies</a>, <a href="/templates/terms/">terms</a>, <a href="/templates/list/">groups</a></p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;after&nbsp;10&nbsp;.Data.Pages&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Render&nbsp;&quot;title&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h3 id="getenv">getenv</h3>
+<p>Returns the value of an environment variable.</p>
+<p>Takes a string containing the name of the variable as input. Returns
+an empty string if the variable is not set, otherwise returns the
+value of the variable. Note that in Unix-like environments, the
+variable must also be exported in order to be seen by <code>hugo</code>.</p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;getenv&nbsp;&quot;HOME&quot;&nbsp;}}</span></span></span></div></pre><h3 id="in">in</h3>
+<p>Checks if an element is in an array (or slice) and returns a boolean.
+The elements supported are strings, integers and floats (only float64 will match as expected).
+In addition, it can also check if a substring exists in a string.</p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;if&nbsp;in&nbsp;.Params.tags&nbsp;&quot;Git&quot;&nbsp;}}Follow&nbsp;me&nbsp;on&nbsp;GitHub!{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p>or</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;if&nbsp;in&nbsp;&quot;this&nbsp;string&nbsp;contains&nbsp;a&nbsp;substring&quot;&nbsp;&quot;substring&quot;&nbsp;}}Substring&nbsp;found!{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h3 id="intersect">intersect</h3>
+<p>Given two arrays (or slices), this function will return the common elements in the arrays.
+The elements supported are strings, integers and floats (only float64).</p>
+<p>A useful example of this functionality is a &#39;similar posts&#39; block.
+Create a list of links to posts where any of the tags in the current post match any tags in other posts.</p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;ul&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;$page_link&nbsp;:=&nbsp;.Permalink&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;$tags&nbsp;:=&nbsp;.Params.tags&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;.Site.Pages&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;$page&nbsp;:=&nbsp;.&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;{{&nbsp;$has_common_tags&nbsp;:=&nbsp;intersect&nbsp;$tags&nbsp;.Params.tags&nbsp;|&nbsp;len&nbsp;|&nbsp;lt&nbsp;0&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;{{&nbsp;if&nbsp;and&nbsp;$has_common_tags&nbsp;(ne&nbsp;$page_link&nbsp;$page.Permalink)&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&lt;li&gt;&lt;a&nbsp;href=&quot;{{&nbsp;$page.Permalink&nbsp;}}&quot;&gt;{{&nbsp;$page.Title&nbsp;}}&lt;/a&gt;&lt;/li&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;/ul&gt;</span></span></span></div></pre><h3 id="isset">isset</h3>
+<p>Returns true if the parameter is set.
+Takes either a slice, array or channel and an index or a map and a key as input.</p>
+<p>e.g. <code>{{ if isset .Params &quot;project_url&quot; }} {{ index .Params &quot;project_url&quot; }}{{ end }}</code></p>
+<h3 id="seq-not-supported">seq - not supported</h3>
+<p>Creates a sequence of integers. It&#39;s named and used as GNU&#39;s seq.</p>
+<p>Some examples:</p>
+<ul>
+<li><code>3</code> =&gt; <code>1, 2, 3</code></li>
+<li><code>1 2 4</code> =&gt; <code>1, 3</code></li>
+<li><code>-3</code> =&gt; <code>-1, -2, -3</code></li>
+<li><code>1 4</code> =&gt; <code>1, 2, 3, 4</code></li>
+<li><code>1 -2</code> =&gt; <code>1, 0, -1, -2</code></li>
+</ul>
+<h3 id="sort">sort</h3>
+<p>Sorts maps, arrays and slices, returning a sorted slice.
+A sorted array of map values will be returned, with the keys eliminated.
+There are two optional arguments, which are <code>sortByField</code> and <code>sortAsc</code>.
+If left blank, sort will sort by keys (for maps) in ascending order.</p>
+<p>Works on <a href="/templates/list/">lists</a>, <a href="/taxonomies/displaying/">taxonomies</a>, <a href="/templates/terms/">terms</a>, <a href="/templates/list/">groups</a></p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Front&nbsp;matter</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>tags:&nbsp;[&nbsp;&quot;tag3&quot;,&nbsp;&quot;tag1&quot;,&nbsp;&quot;tag2&quot;&nbsp;]</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Site&nbsp;config</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>[params.authors]</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>[params.authors.Derek]</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&quot;firstName&quot;&nbsp;&nbsp;=&nbsp;&quot;Derek&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&quot;lastName&quot;&nbsp;&nbsp;&nbsp;=&nbsp;&quot;Perkins&quot;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>[params.authors.Joe]</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&quot;firstName&quot;&nbsp;&nbsp;=&nbsp;&quot;Joe&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&quot;lastName&quot;&nbsp;&nbsp;&nbsp;=&nbsp;&quot;Bergevin&quot;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>[params.authors.Tanner]</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>&quot;firstName&quot;&nbsp;&nbsp;=&nbsp;&quot;Tanner&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;&quot;lastName&quot;&nbsp;&nbsp;&nbsp;=&nbsp;&quot;Linsley&quot;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Use&nbsp;default&nbsp;sort&nbsp;options&nbsp;-&nbsp;sort&nbsp;by&nbsp;key&nbsp;/&nbsp;ascending</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Tags:&nbsp;{{&nbsp;range&nbsp;sort&nbsp;.Params.tags&nbsp;}}{{&nbsp;.&nbsp;}}&nbsp;{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Outputs&nbsp;Tags:&nbsp;tag1&nbsp;tag2&nbsp;tag3</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Sort&nbsp;by&nbsp;value&nbsp;/&nbsp;descending</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Tags:&nbsp;{{&nbsp;range&nbsp;sort&nbsp;.Params.tags&nbsp;&quot;value&quot;&nbsp;&quot;desc&quot;&nbsp;}}{{&nbsp;.&nbsp;}}&nbsp;{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Outputs&nbsp;Tags:&nbsp;tag3&nbsp;tag2&nbsp;tag1</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Use&nbsp;default&nbsp;sort&nbsp;options&nbsp;-&nbsp;sort&nbsp;by&nbsp;value&nbsp;/&nbsp;descending</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Authors:&nbsp;{{&nbsp;range&nbsp;sort&nbsp;.Site.Params.authors&nbsp;}}{{&nbsp;.firstName&nbsp;}}&nbsp;{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Outputs&nbsp;Authors:&nbsp;Derek&nbsp;Joe&nbsp;Tanner</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Use&nbsp;default&nbsp;sort&nbsp;options&nbsp;-&nbsp;sort&nbsp;by&nbsp;value&nbsp;/&nbsp;descending</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>Authors:&nbsp;{{&nbsp;range&nbsp;sort&nbsp;.Site.Params.authors&nbsp;&quot;lastName&quot;&nbsp;&quot;desc&quot;&nbsp;}}{{&nbsp;.lastName&nbsp;}}&nbsp;{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Outputs&nbsp;Authors:&nbsp;Perkins&nbsp;Linsley&nbsp;Bergevin</span></span></span></div></pre><h3 id="where">where</h3>
+<p>Filters an array to only elements containing a matching value for a given field.</p>
+<p>Works on <a href="/templates/list/">lists</a>, <a href="/taxonomies/displaying/">taxonomies</a>, <a href="/templates/terms/">terms</a>, <a href="/templates/list/">groups</a></p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;where&nbsp;.Data.Pages&nbsp;&quot;Section&quot;&nbsp;&quot;post&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Content&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p>It can be used with dot chaining second argument to refer a nested element of a value.</p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>//&nbsp;Front&nbsp;matter&nbsp;on&nbsp;some&nbsp;pages</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>series:&nbsp;golang</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;where&nbsp;.Site.Pages&nbsp;&quot;Params.series&quot;&nbsp;&quot;golang&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Content&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p>It can also be used with an operator like <code>!=</code>, <code>&gt;=</code>, <code>in</code> etc. Without an operator (like above), <code>where</code> compares a given field with a matching value in a way like <code>=</code> is specified.</p>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;where&nbsp;.Data.Pages&nbsp;&quot;Section&quot;&nbsp;&quot;!=&quot;&nbsp;&quot;post&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Content&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p>Following operators are now available</p>
+<ul>
+<li><code>=</code>, <code>==</code>, <code>eq</code>: True if a given field value equals a matching value</li>
+<li><code>!=</code>, <code>&lt;&gt;</code>, <code>ne</code>: True if a given field value doesn&#39;t equal a matching value</li>
+<li><code>&gt;=</code>, <code>ge</code>: True if a given field value is greater than or equal to a matching value</li>
+<li><code>&gt;</code>, <code>gt</code>: True if a given field value is greater than a matching value</li>
+<li><code>&lt;=</code>, <code>le</code>: True if a given field value is lesser than or equal to a matching value</li>
+<li><code>&lt;</code>, <code>lt</code>: True if a given field value is lesser than a matching value</li>
+<li><code>in</code>: True if a given field value is included in a matching value. A matching value must be an array or a slice</li>
+<li><code>not in</code>: True if a given field value isn&#39;t included in a matching value. A matching value must be an array or a slice</li>
+</ul>
+<p><em><code>where</code> and <code>first</code> can be stacked, e.g.:</em></p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;first&nbsp;5&nbsp;(where&nbsp;.Data.Pages&nbsp;&quot;Section&quot;&nbsp;&quot;post&quot;)&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Content&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h3 id="unset-field">Unset field</h3>
+<p>Filter only work for set fields. To check whether a field is set or exist, use operand <code>nil</code>.</p>
+<p>This can be useful to filter a small amount of pages from a large pool. Instead of set field on all pages, you can set field on required pages only.</p>
+<p>Only following operators are available for <code>nil</code></p>
+<ul>
+<li><code>=</code>, <code>==</code>, <code>eq</code>: True if the given field is not set.</li>
+<li><code>!=</code>, <code>&lt;&gt;</code>, <code>ne</code>: True if the given field is set.</li>
+</ul>
+<p>e.g.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;where&nbsp;.Data.Pages&nbsp;&quot;.Params.specialpost&quot;&nbsp;&quot;!=&quot;&nbsp;nil&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Content&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h2 id="math">Math</h2>
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>add</code></td>
+<td>Adds two integers.</td>
+<td><code>{{add 1 2}}</code> → 3</td>
+</tr>
+
+<tr>
+<td><code>div</code></td>
+<td>Divides two integers.</td>
+<td><code>{{div 6 3}}</code> → 2</td>
+</tr>
+
+<tr>
+<td><code>mod</code></td>
+<td>Modulus of two integers.</td>
+<td><code>{{mod 15 3}}</code> → 0</td>
+</tr>
+
+<tr>
+<td><code>modBool</code></td>
+<td>Boolean of modulus of two integers.  <code>true</code> if modulus is 0.</td>
+<td><code>{{modBool 15 3}}</code> → true</td>
+</tr>
+
+<tr>
+<td><code>mul</code></td>
+<td>Multiplies two integers.</td>
+<td><code>{{mul 2 3}}</code> → 6</td>
+</tr>
+
+<tr>
+<td><code>sub</code></td>
+<td>Subtracts two integers.</td>
+<td><code>{{sub 3 2}}</code> → 1</td>
+</tr>
+
+</tbody>
+</table>
+
+
+<h2 id="strings">Strings</h2>
+<h3 id="chomp">chomp</h3>
+<p>Removes any trailing newline characters. Useful in a pipeline to remove newlines added by other processing (including <code>markdownify</code>).</p>
+<p>e.g., <code>{{chomp &quot;&lt;p&gt;Blockhead&lt;/p&gt;\n&quot;}}</code> → <code>&quot;&lt;p&gt;Blockhead&lt;/p&gt;&quot;</code></p>
+<h3 id="lower">lower</h3>
+<p>Converts all characters in string to lowercase.</p>
+<p>e.g. <code>{{lower &quot;BatMan&quot;}}</code> → &quot;batman&quot;</p>
+<h3 id="pluralize">pluralize</h3>
+<p>Pluralize the given word with a set of common English pluralization rules.</p>
+<p>e.g. <code>{{ &quot;cat&quot; | pluralize }}</code> → &quot;cats&quot;</p>
+<h3 id="replace">replace</h3>
+<p>Replaces all occurrences of the search string with the replacement string.</p>
+<p>e.g. <code>{{ replace &quot;Batman and Robin&quot; &quot;Robin&quot; &quot;Catwoman&quot; }}</code> → &quot;Batman and Catwoman&quot;</p>
+<h3 id="singularize">singularize</h3>
+<p>Singularize the given word with a set of common English singularization rules.</p>
+<p>e.g. <code>{{ &quot;cats&quot; | singularize }}</code> → &quot;cat&quot;</p>
+<h3 id="slicestr">slicestr</h3>
+<p>Slicing in <code>slicestr</code> is done by specifying a half-open range with two indices, <code>start</code> and <code>end</code>.
+For example, 1 and 4 creates a slice including elements 1 through 3.
+The <code>end</code> index can be omitted; it defaults to the string&#39;s length.</p>
+<p>e.g.</p>
+<ul>
+<li><code>{{slicestr &quot;BatMan&quot; 3}}</code> → &quot;Man&quot;</li>
+<li><code>{{slicestr &quot;BatMan&quot; 0 3}}</code> → &quot;Bat&quot;</li>
+</ul>
+<h3 id="substr">substr</h3>
+<p>Extracts parts of a string, beginning at the character at the specified
+position, and returns the specified number of characters.</p>
+<p>It normally takes two parameters: <code>start</code> and <code>length</code>.
+It can also take one parameter: <code>start</code>, i.e. <code>length</code> is omitted, in which case
+the substring starting from start until the end of the string will be returned.</p>
+<p>To extract characters from the end of the string, use a negative start number.</p>
+<p>In addition, borrowing from the extended behavior described at <a href="http://php.net/substr">http://php.net/substr</a>,
+if <code>length</code> is given and is negative, then that many characters will be omitted from
+the end of string.</p>
+<p>e.g.</p>
+<ul>
+<li><code>{{substr &quot;BatMan&quot; 0 -3}}</code> → &quot;Bat&quot;</li>
+<li><code>{{substr &quot;BatMan&quot; 3 3}}</code> → &quot;Man&quot;</li>
+</ul>
+<h3 id="title">title</h3>
+<p>Converts all characters in string to titlecase.</p>
+<p>e.g. <code>{{title &quot;BatMan&quot;}}</code> → &quot;Batman&quot;</p>
+<h3 id="trim">trim</h3>
+<p>Returns a slice of the string with all leading and trailing characters contained in cutset removed.</p>
+<p>e.g. <code>{{ trim &quot;++Batman--&quot; &quot;+-&quot; }}</code> → &quot;Batman&quot;</p>
+<h3 id="upper">upper</h3>
+<p>Converts all characters in string to uppercase.</p>
+<p>e.g. <code>{{upper &quot;BatMan&quot;}}</code> → &quot;BATMAN&quot;</p>
+<h2 id="content-views">Content Views</h2>
+<h3 id="render">Render</h3>
+<p>Takes a view to render the content with.  The view is an alternate layout, and should be a file name that points to a template in one of the locations specified in the documentation for <a href="/templates/views">Content Views</a>.</p>
+<p>This function is only available on a piece of content, and in list context.</p>
+<p>This example could render a piece of content using the content view located at <code>/layouts/_default/summary.html</code>:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;.Data.Pages&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;.Render&nbsp;&quot;summary&quot;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><h2 id="advanced">Advanced</h2>
+<h3 id="apply">apply</h3>
+<p>Given a map, array, or slice, returns a new slice with a function applied over it. Expects at least three parameters, depending on the function being applied. The first parameter is the sequence to operate on; the second is the name of the function as a string, which must be in the Hugo function map (generally, it is these functions documented here). After that, the parameters to the applied function are provided, with the string <code>&quot;.&quot;</code> standing in for each element of the sequence the function is to be applied against. An example is in order:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>names:&nbsp;[&nbsp;&quot;Derek&nbsp;Perkins&quot;,&nbsp;&quot;Joe&nbsp;Bergevin&quot;,&nbsp;&quot;Tanner&nbsp;Linsley&quot;&nbsp;]</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>+++</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;apply&nbsp;.Params.names&nbsp;&quot;urlize&quot;&nbsp;&quot;.&quot;&nbsp;}}&nbsp;→&nbsp;[&nbsp;&quot;derek-perkins&quot;,&nbsp;&quot;joe-bergevin&quot;,&nbsp;&quot;tanner-linsley&quot;&nbsp;]</span></span></span></div></pre><p>This is roughly equivalent to:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;range&nbsp;.Params.names&nbsp;}}{{&nbsp;.&nbsp;|&nbsp;urlize&nbsp;}}{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p>However, it isn’t possible to provide the output of a range to the <code>delimit</code> function, so you need to <code>apply</code> it. A more complete example should explain this. Let&#39;s say you have two partials for displaying tag links in a post,  &quot;post/tag/list.html&quot; and &quot;post/tag/link.html&quot;, as shown below.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;post/tag/list.html&nbsp;--&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;with&nbsp;.Params.tags&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;div&nbsp;class=&quot;tags-list&quot;&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>Tags:</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;$len&nbsp;:=&nbsp;len&nbsp;.&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;if&nbsp;eq&nbsp;$len&nbsp;1&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;partial&nbsp;&quot;post/tag/link&quot;&nbsp;(index&nbsp;.&nbsp;0)&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;else&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;$last&nbsp;:=&nbsp;sub&nbsp;$len&nbsp;1&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;{{&nbsp;range&nbsp;first&nbsp;$last&nbsp;.&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;partial&nbsp;&quot;post/tag/link&quot;&nbsp;.&nbsp;}},</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;&nbsp;&nbsp;{{&nbsp;partial&nbsp;&quot;post/tag/link&quot;&nbsp;(index&nbsp;.&nbsp;$last)&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;/div&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;post/tag/link.html&nbsp;--&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;a&nbsp;class=&quot;post-tag&nbsp;post-tag-{{&nbsp;.&nbsp;|&nbsp;urlize&nbsp;}}&quot;&nbsp;href=&quot;/tags/{{&nbsp;.&nbsp;|&nbsp;urlize&nbsp;}}&quot;&gt;{{&nbsp;.&nbsp;}}&lt;/a&gt;</span></span></span></div></pre><p>This works, but the complexity of &quot;post/tag/list.html&quot; is fairly high; the Hugo template needs to perform special behaviour for the case where there’s only one tag, and it has to treat the last tag as special. Additionally, the tag list will be rendered something like &quot;Tags: tag1 , tag2 , tag3&quot; because of the way that the HTML is generated and it is interpreted by a browser.</p>
+<p>This is Hugo. We have a better way. If this were your &quot;post/tag/list.html&quot; instead, all of those problems are fixed automatically (this first version separates all of the operations for ease of reading; the combined version will be shown after the explanation).</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;post/tag/list.html&nbsp;--&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;with.Params.tags&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;div&nbsp;class=&quot;tags-list&quot;&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>Tags:</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;$sort&nbsp;:=&nbsp;sort&nbsp;.&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;$links&nbsp;:=&nbsp;apply&nbsp;$sort&nbsp;&quot;partial&quot;&nbsp;&quot;post/tag/link&quot;&nbsp;&quot;.&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;$clean&nbsp;:=&nbsp;apply&nbsp;$links&nbsp;&quot;chomp&quot;&nbsp;&quot;.&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;delimit&nbsp;$clean&nbsp;&quot;,&nbsp;&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;/div&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p>In this version, we are now sorting the tags, converting them to links with &quot;post/tag/link.html&quot;, cleaning off stray newlines, and joining them together in a delimited list for presentation. That can also be written as:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;post/tag/list.html&nbsp;--&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;with.Params.tags&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;div&nbsp;class=&quot;tags-list&quot;&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;&nbsp;</span><span class="meta paragraph text"><span>Tags:</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&nbsp;&nbsp;{{&nbsp;delimit&nbsp;(apply&nbsp;(apply&nbsp;(sort&nbsp;.)&nbsp;&quot;partial&quot;&nbsp;&quot;post/tag/link&quot;&nbsp;&quot;.&quot;)&nbsp;&quot;chomp&quot;&nbsp;&quot;.&quot;)&nbsp;&quot;,&nbsp;&quot;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;/div&gt;</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;end&nbsp;}}</span></span></span></div></pre><p><code>apply</code> does not work when receiving the sequence as an argument through a pipeline.</p>
+<hr>
+<h3 id="base64encode-and-base64decode">base64Encode and base64Decode</h3>
+<p><code>base64Encode</code> and <code>base64Decode</code> let you easily decode content with a base64 encoding and vice versa through pipes. Let&#39;s take a look at an example:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;&quot;Hello&nbsp;world&quot;&nbsp;|&nbsp;base64Encode&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;will&nbsp;output&nbsp;&quot;SGVsbG8gd29ybGQ=&quot;&nbsp;and&nbsp;--&gt;</span></span></span></div><div class="line"><span class="text plain"><span>&nbsp;</span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;&quot;SGVsbG8gd29ybGQ=&quot;&nbsp;|&nbsp;base64Decode&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;becomes&nbsp;&quot;Hello&nbsp;world&quot;&nbsp;again.&nbsp;--&gt;</span></span></span></div></pre><p>You can also pass other datatypes as argument to the template function which tries
+to convert them. Now we use an integer instead of a string:</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;42&nbsp;|&nbsp;base64Encode&nbsp;|&nbsp;base64Decode&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>&lt;!--&nbsp;will&nbsp;output&nbsp;&quot;42&quot;.&nbsp;Both&nbsp;functions&nbsp;always&nbsp;return&nbsp;a&nbsp;string.&nbsp;--&gt;</span></span></span></div></pre><p><strong>Tip:</strong> Using base64 to decode and encode becomes really powerful if we have to handle
+responses of APIs.</p>
+<pre class="editor-colors lang-text"><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;$resp&nbsp;:=&nbsp;getJSON&nbsp;&quot;</span><span class="markup underline link https hyperlink"><span>https://api.github.com/repos/spf13/hugo/readme</span></span><span>&quot;&nbsp;&nbsp;}}</span></span></span></div><div class="line"><span class="text plain"><span class="meta paragraph text"><span>{{&nbsp;$resp.content&nbsp;|&nbsp;base64Decode&nbsp;|&nbsp;markdownify&nbsp;}}</span></span></span></div></pre><p>The response of the GitHub API contains the base64-encoded version of the <a href="https://github.com/spf13/hugo/blob/master/README.md">README.md</a> in the Hugo repository. Now we can decode it and parse the Markdown. The final output will look similar to the rendered version on GitHub.</p></body>
+</html>

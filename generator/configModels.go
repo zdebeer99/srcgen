@@ -2,16 +2,26 @@ package generator
 
 // ConfigMain this is the main config files structure.
 type ConfigMain struct {
-	TemplateDataPath string
-	TemplatePath     string
-	Generate         []GenUnit
+	TemplateDataPath string          `templateDataPath`
+	TemplatePath     string          `templatePath`
+	Tasks            []GeneratorTask `tasks`
 }
 
-type GenUnit struct {
-	Name       string
-	DataSource string
-	Template   string
-	Output     string
+func (this *ConfigMain) GetDataPath(fileName string) string {
+	return this.TemplateDataPath + "/" + fileName
+}
+
+func (this *ConfigMain) GetTemplatePath(templateName string) string {
+	return this.TemplatePath + "/" + templateName
+}
+
+// GeneratorTask Define a source code generator task
+type GeneratorTask struct {
+	Name           string            `name`
+	Data           map[string]string `data`
+	Template       string            `template`
+	TemplateConfig map[string]interface{}
+	Output         string `output`
 }
 
 type ConfigTemplate struct {

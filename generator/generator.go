@@ -1,6 +1,4 @@
 package generator
 
-/*
-  goal 1. Generate code.
-
-*/
+//package release version.
+const Version = "0.00"
